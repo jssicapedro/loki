@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=B612:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: url('img/fundo.svg') 50% 50% no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 110vh;
+    color: #fff;
+    font-family: 'B612', sans-serif;
+    overflow: hidden;
+}
+
+.efeito{
+    width: 100%;
+    height: 110vh;
+    position: absolute;
+    background: #000000b3;
+}
+
+header, main{
+    width: 100%;
+}
+
+header{
+    font-weight: 700;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header p{
+    font-size: 20px;
+}
+
+h1{
+    font-size: 92px;
+    margin-bottom: 5%;
+    text-align: center;
+}
+
+.serie{
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.capa{
+    width: 15%;
+}
+
+.conteudo{
+    width: 35%;
+    height: 75%;
+    padding-left: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.desc{
+    height: 50%;
+    width: 90%;
+    font-weight: 400;
+    text-align: left;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.elementos{
+    width: 80%;
+    height: 25%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 700;
+}
+
+.min{
+    display: flex;
+    align-items: center;
+}
+
+.min::before{
+    content: url('img/clock.svg');
+    margin-right: 10px;
+}
+
+.btn{
+    width: 80%;
+    height: 25%;
+    display: flex;
+    gap: 5%;
+    align-items: center;
+    text-align: center;
+}
+
+.btn a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.btn a:nth-child(1){
+    background: #0072D2;
+    width: 50%;
+    height: 50px;
+    line-height: 55px;
+}
+
+.btn a:nth-child(2){
+    background: #131318;
+    border: 1px solid #fff;
+    width: 30%;
+    height: 40px;
+    line-height: 45px;
+}
+
+@media (max-width: 1400px){
+    .elementos{
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 5%;
+    }
+}
+
+@media (max-width: 1000px){
+    header{
+        height: 10vh;
+    }
+
+    h1{
+        margin: 0;
+    }
+
+    .serie{
+        flex-direction: column;
+        height: 65vh;
+    }
+
+    .conteudo{
+        width: 80%;
+        height: 30vh;
+    }
+
+    .desc{
+        height: 55%;
+    }
+
+    .elementos{
+        height: 20vh;
+        margin: 35px 0;
+    }
+
+    .capa{
+       width: 22%; 
+       margin: 5% 0;
+    }
+}
+
+@media (max-width: 750px){
+    body {
+        overflow: auto;
+    }
+    .btn{
+        flex-direction: column;
+        gap: 25%;
+    }
+
+    .btn a:nth-child(1){
+        width: 80%;
+    }
+
+    .btn a:nth-child(2){
+        width: 80%;
+    }
+
+    .capa{
+        width: 35%;
+    }
+}
